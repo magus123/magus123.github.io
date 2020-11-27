@@ -3,6 +3,7 @@
     <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>Learn PWA</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="manifest" href="/manifest.json">
@@ -26,8 +27,8 @@
                     <!-- <h2>Loading.....</h2> -->
                 <!-- </div> -->
             </main>
-            <div id="container" style="height: 700px">
-            <!-- <h1>CHART PIE PWA</h1>
+            
+            <h1>CHART PIE PWA</h1>
             <div id="piechart"></div>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
@@ -53,7 +54,8 @@
               var chart = new google.visualization.PieChart(document.getElementById('piechart'));
               chart.draw(data, options);
             }
-            </script>  -->
+            </script> 
+            <div id="container" style="height: 700px"> </div>
             <script src="js/jquery.min.js" charset="utf-8"></script>
             <script src="js/main.js" charset="utf-8"></script>
             <script src="manifest.json" charset="utf-8"></script>
