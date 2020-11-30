@@ -11,7 +11,6 @@ $(document).ready(function(){
         {
             _cat = items.category;
 
-
             dataResults += "<div>"
                         + "<h3>" + items.name + "</h3>"
                         + "<p>" + items.category +"</p>"
@@ -54,46 +53,129 @@ $(document).ready(function(){
         $('#product').html(dataResults)
 
       })
-    }
-}) //end document jquery
+    }//end document jquery
 
-//tespiehighchart
+    //tespiehighchart1
 $(function () {
-  $('#container').highcharts({
-      chart: {
-          type: 'pie'
-      },
-      xAxis: {
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-      },
-      
-      plotOptions: {
-          series: {
-              cursor: 'pointer',
-              point: {
-                  events: {
-                      click: function() {
-                          location.href = this.options.url;
-                      }
-                  }
-              }
-          }
-      },
-      
-      series: [{
-          data: [{
-              y: 29.9,
-              url: 'http://bing.com/search?q=foo'
-          }, {
-              y: 100.5,
-              url: 'http://bing.com/search?q=bar'
-          }, {
-              y: 106.4,
-              url: 'http://bing.com/search?q=foo+bar'
-          }]        
-      }]
+    $('#container').highcharts({
+        
+        title: {
+            text: 'Dashboard BTN'
+        },
+        chart: {
+            type: 'pie'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        
+        plotOptions: {
+            series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function() {
+                            location.href = this.options.url;
+                        }
+                    }
+                }
+            }
+        },
+        
+        series: [{
+            data: [{
+                y: 1000,
+                url: 'view/test.html'
+            }, {
+                y: 100.5,
+                url: 'http://bing.com/search?q=bar'
+            }, {
+                y: 106.4,
+                url: 'http://bing.com/search?q=foo+bar'
+            }]        
+        }]
+    });
   });
-});
+
+   //tespiehighchart2
+$(function () {
+    $('#container2').highcharts({
+        
+        chart: {
+            type: 'pie'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        
+        plotOptions: {
+            series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function() {
+                            location.href = this.options.url;
+                        }
+                    }
+                }
+            }
+        },
+        
+        series: [{
+            data: [{
+                y: 1000,
+                url: 'view/test.html'
+            }, {
+                y: 100.5,
+                url: 'http://bing.com/search?q=bar'
+            }, {
+                y: 106.4,
+                url: 'http://bing.com/search?q=foo+bar'
+            }]        
+        }]
+    });
+  });
+
+    //tespiehighchart3
+  $(function () {
+    $('#container3').highcharts({
+        
+        chart: {
+            type: 'pie'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        
+        plotOptions: {
+            series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function() {
+                            location.href = this.options.url;
+                        }
+                    }
+                }
+            }
+        },
+        
+        series: [{
+            data: [{
+                y: 1000,
+                url: 'view/test.html'
+            }, {
+                y: 100.5,
+                url: 'http://bing.com/search?q=bar'
+            }, {
+                y: 106.4,
+                url: 'http://bing.com/search?q=foo+bar'
+            }]        
+        }]
+    });
+  });
+}) 
+
 
 //PWAServiceWorker
 if ('serviceWorker' in navigator) {
